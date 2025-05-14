@@ -1,0 +1,77 @@
+.event-details-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+/* Heading Styles */
+.event-details-container h2 {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Event Description and Details */
+.event-details-container p {
+  font-size: 1.1rem;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left; /* Align text to the left */
+}
+
+/* Date and Location */
+.event-details-container p strong {
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+/* Button Styling */
+button {
+  background-color: #1e3a8a;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #b0c4de;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Hover effect on container */
+.event-details-container:hover {
+  transform: scale(1.02);
+}
+
+/* Keyframe for fading animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

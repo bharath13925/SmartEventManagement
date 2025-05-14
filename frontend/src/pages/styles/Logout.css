@@ -1,0 +1,76 @@
+/* src/components/Logout.css */
+
+.logout-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .logout-modal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeInScale 0.3s ease-in-out;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  .logout-modal h3 {
+    font-size: 22px;
+    color: #0a66c2;
+    margin-bottom: 20px;
+  }
+  
+  .logout-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .logout-buttons button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .logout-buttons .confirm {
+    background-color: #0a66c2;
+    color: white;
+  }
+  
+  .logout-buttons .confirm:hover {
+    background-color: #084a96;
+  }
+  
+  .logout-buttons .cancel {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .logout-buttons .cancel:hover {
+    background-color: #bbb;
+  }
+  
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

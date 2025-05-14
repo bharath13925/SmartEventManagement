@@ -1,0 +1,70 @@
+.event-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.event-details p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.event-details strong {
+  color: #333;
+}
+
+.event-description {
+  margin-top: 8px;
+  font-style: italic;
+  color: #666;
+}
+
+.registration-badge {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-top: 12px;
+}
+
+/* For EventCardPage */
+.event-card-page {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.loading, .error, .not-found {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.error {
+  color: #d32f2f;
+}

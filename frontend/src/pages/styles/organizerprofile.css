@@ -1,0 +1,54 @@
+/* src/pages/UserProfile.css */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+  }
+  
+  .dashboard-content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #f0f8ff;
+  }
+  
+  .dashboard-content h2 {
+    color: #0a66c2;
+    font-size: 26px;
+    margin-bottom: 20px;
+    animation: slideIn 0.5s ease;
+  }
+  
+  .dashboard-content p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .dashboard-content h3 {
+    color: #0a66c2;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  
+  .dashboard-content ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .dashboard-content li {
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 6px;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
