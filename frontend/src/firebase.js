@@ -3,12 +3,12 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  apiKey: "AIzaSyDV186t2ITefpa_Id4fp5Yz8dB8a1KKiSs",
+  authDomain: "smart-event-management-f6b29.firebaseapp.com",
+  projectId: "smart-event-management-f6b29",
+  storageBucket: "smart-event-management-f6b29.firebasestorage.app",
+  messagingSenderId: "1:237222998095:web:8f3db781fe3b461b8a7a3a",
+  appId: "G-9D14XRRT7G",
 };
 
 const app = initializeApp(firebaseConfig);
