@@ -36,6 +36,5 @@ backend/.env
 # build output
 client/build/
 
-echo ".env" >> .gitignore
 
 SmartEventManagement.git/
